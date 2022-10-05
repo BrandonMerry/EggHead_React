@@ -1,0 +1,21 @@
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+  <script type="text/javascript">
+    const rootElement = document.getElementById('root')
+    // this is a react element with props of "children" & "className"
+    const element = React.createElement('div', {
+      // children: ['hellow react', 'another way to do child props']
+      className: 'container',
+    }
+      // children elements 
+      ,
+      'Hello React World',
+      'another Child Prop',
+      'more children props'
+
+    )
+    ReactDOM.render(element, rootElement)
+  </script>
+</body>
