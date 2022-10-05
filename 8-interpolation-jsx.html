@@ -4,10 +4,14 @@
     <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
     <script type="text/babel">
+        // displays that text has 15 characters
+        // displays that "" has NO characters
         function CharacterCount({ text }) {
+            // this is JS 
             return (
+                // this starts JSX
                 <div>
-                    {`The text "${text}" has `}
+                    { /*this is JS */`The text "${text}" has `}
                     {text.length ? <strong>{text.length}</strong> : 'No'}
                     {' characters'}
                 </div>
@@ -16,7 +20,7 @@
 
         const element = (
             <>
-                <CharacterCount text="Hello World" />
+                <CharacterCount text="Hello React World" />
                 <CharacterCount text="" />
             </>
         )
