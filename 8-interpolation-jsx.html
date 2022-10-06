@@ -12,9 +12,10 @@
                 // this starts JSX
                 <div>
                     { /*this is JS */`The text "${text}" has `}
-                    {text.length ? <strong>{text.length}</strong> : 'No'}
+                    {/*this is JS & JSX*/text.length ? <strong>{text.length}</strong> : 'No'}
                     {' characters'}
                 </div>
+                // back to JS 
             )
         }
 
